@@ -1,0 +1,283 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #f7f8fc, #e1e5ee); /* Subtle gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.resume {
+    width: 90%;
+    max-width: 800px;
+    background: #fff; /* White background for the resume container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean look */
+    overflow: hidden;
+    border: 1px solid #e0e0e0; /* Light border for definition */
+}
+
+.article-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #b300ff;
+}
+
+.timeline {
+    margin-bottom: 40px;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 37px;
+}
+
+.centered-title {
+    justify-content: center;
+    align-items:center;
+}
+
+.icon-box {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.h3 {
+    font-size: 1.5em;
+}
+
+.timeline-list {
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-list:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #000000;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: #ff8800;
+    border-radius: 50%;
+}
+
+.h4.timeline-item-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+/* Add this CSS to your existing stylesheet */
+
+.skills {
+    margin-top: 50px;
+}
+
+.skills-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-item {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-bar {
+    background-color: #43484a;
+    height: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #007bff;
+}
+
+.skill-percent {
+    margin-top: 5px;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.h5 {
+    margin: 0;
+}
+
+.data {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.skill-progress {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.skill-progress-fill {
+    height: 100%;
+    background-color: #007bff;
+}
+
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.h5 {
+    margin: 0;
+}
+
+.data {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+/* Add this CSS to your existing stylesheet */
+
+.tools {
+    margin-top: 50px;
+}
+
+.tool-category {
+    margin-bottom: 30px;
+}
+
+.tool-category-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.tools-item {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width for spacing */
+    text-align: center;
+}
+
+.tool-box {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tool-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.h4 {
+    margin-top: 10px;
+}
+
+
+.certifications {
+    margin-top: 40px;
+}
+
+.certifications-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.certifications-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.certifications-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: calc(48% - 10px); /* Adjust width for spacing */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certifications-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.certification-photo-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.certification-photo {
+    width: 100%;
+    display: block;
+}
+
+.certification-details {
+    padding: 15px;
+}
+
+.certifications-item-title {
+    font-size: 1.1em;
+    margin: 0 0 10px;
+}
+
+.certifications-text {
+    font-size: 0.9em;
+    color: #555;
+}

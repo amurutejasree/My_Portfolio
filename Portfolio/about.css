@@ -1,0 +1,128 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.section {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.section__container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.section__container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.section__container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007bff;
+    position: relative;
+    z-index: 2;
+}
+
+.section__container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.service {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    background: #007bff;
+    color: #fff;
+}
+
+.service i {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.service:hover i {
+    color: #fff;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1em;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.service {
+    animation: float 4s ease-in-out infinite;
+}
+
+.background-shape {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: #007bff;
+    border-radius: 50%;
+    opacity: 0.1;
+    z-index: 1;
+}
